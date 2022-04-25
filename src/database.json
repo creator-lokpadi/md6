@@ -1,6 +1,17 @@
 {
   "sticker": {},
-  "database": {},
+  "database": {
+    "p": {
+      "key": {
+        "remoteJid": "6282321720820@s.whatsapp.net",
+        "fromMe": false,
+        "id": "BAE584309CF724E6"
+      },
+      "message": {
+        "conversation": "https://telegra.ph/file/7898635da5cf350594148.jpg"
+      }
+    }
+  },
   "game": {
     "tebaklagu": [],
     "family100": [],
