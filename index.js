@@ -30,7 +30,7 @@ async function startzyy() {
     const zyy = zyyConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Realzi - MD','Safari','1.0.0'],
+        browser: ['TEAMCREATORLOKPADI-MD','Safari','1.0.0'],
         auth: state,
         version: getVersionWaweb() || [2, 2208, 7]
     })
