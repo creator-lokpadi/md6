@@ -1744,8 +1744,8 @@ break
             break
 case 'mode': case 'set': {
         const buttons = [
-{buttonId: `${prefix}self`, buttonText: {displayText: 'SELF'}, type: 1},
-{buttonId: `${prefix}public`, buttonText: {displayText: 'PUBLIC'}, type: 1}
+{buttonId: `${prefix}off`, buttonText: {displayText: 'OFF'}, type: 1},
+{buttonId: `${prefix}on`, buttonText: {displayText: 'ON'}, type: 1}
 ]
 
 const buttonMessage = {
@@ -2574,16 +2574,29 @@ break
   const cimcimi = await fetchJson(`https://api.simsimi.net/v2/?text=${q}&lc=id`)
   zyy.sendMessage(m.chat, { text: cimcimi.success})
   break
-            case 'public': {
+  
+case 'p': {
                 if (!isCreator) throw mess.owner
-                zyy.public = true
-                m.reply('Sukse Change To Public Usage')
+                
+                m.reply('HAY MY MASTER '),
+                
             }
             break
-            case 'self': {
+  
+  
+  
+            case 'on': {
+                if (!isCreator) throw mess.owner
+                zyy.public = true
+                m.reply('MENYALAKAN BOT ENGINE'),
+                  m.reply('STARTING...')
+            }
+            break
+            case 'off': {
                 if (!isCreator) throw mess.owner
                 zyy.public = false
-                m.reply('Sukses Change To Self Usage')
+                m.reply('MEMATIKAN BOT ENGINE'),
+                 m.reply('SHUTDOWN...')
             }
             break
             case 'ping': case 'botstatus': case 'statusbot': {
