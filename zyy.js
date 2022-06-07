@@ -2578,7 +2578,7 @@ break
 case 'p': {
                 if (!isCreator) throw mess.owner
                 
-                m.reply('HAY MY MASTER '),
+                m.reply('HAY MY MASTER ')
                 
             }
             break
